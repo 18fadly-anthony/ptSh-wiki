@@ -18,7 +18,7 @@ export PATH=~/.local/bin:$PATH
 ```
 
 ### Manual installation
-- clone repository and use make to install it
+- clone repository and use `make` to install it
 ```shell
 git clone https://github.com/jszczerbinsky/ptSh
 cd ptSh
