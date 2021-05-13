@@ -12,8 +12,9 @@ echo -e "\033[0m"
 Correct ways to specify escape codes in config are `\x1B[Ym` and `\033[Ym`, where `Y` is escape code number (this from script output), e.g.: 
 
 ```shell
-\x1B[35m #magneta foreground
-\x1B[4m  #underline
+DIR_NAME_ESCAPE_CODES='\x1B[35m'          #sets foreground color of directory name to magneta
+FILE_NAME_ESCAPE_CODES='\x1B[4m'          #sets underline for file names
+LINK_NAME_ESCAPE_CODES='\x1B[5m\x1B[42m'  #makes hyperlink name blinking and green background color
 ```
 
 ## Restoring default configuration
