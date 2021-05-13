@@ -1,0 +1,33 @@
+## Terminal font
+To display special characters (directory icon, file icon etc.) your terminal needs font, that supports them such as [NerdFonts](https://github.com/ryanoasis/nerd-fonts).
+
+## $PATH
+ptSh will be installed to `/home/$USER/.local/bin`, so make sure, that it is in your `$PATH`.
+If it is not there, put this in Your `.bashrc` file:
+
+```shell
+export PATH=~/.local/bin:$PATH
+```
+
+## Installing
+### Automated installation
+- Download `install.sh` script from the [latest](https://github.com/jszczerbinsky/ptSh/releases/latest) release.
+- Run it
+```shell
+./install.sh
+```
+
+### Manual installation
+- clone repository and use make to install it
+```shell
+git clone https://github.com/jszczerbinsky/ptSh
+cd ptSh
+make
+```
+
+## Post-Installation
+Now You have all scripts installed, but **they don't replace original commands** (check out script names in [README](https://github.com/jszczerbinsky/ptSh/blob/main/README.md)). You can set aliases to use ptSh commands instead of original ones. To do this, just put this line in your `.bashrc` file:
+ 
+```shell
+source ptSh_set_aliases
+```
